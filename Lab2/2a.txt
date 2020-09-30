@@ -8,5 +8,5 @@ sampbanks<-na.exclude(banks)
 sampbanks
 head(banks)
 summary(banks)
-colnames(cars_data)
+colnames(banks)
 plot(x=banks[,"age"], y=banks[,"income"])

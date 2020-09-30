@@ -1,0 +1,12 @@
+list.files()
+getwd()
+setwd("/Users/prachikumar/Downloads")
+grep(".csv",list.files(),value=T)
+banks<-read.csv("bank-data.csv")
+banks
+sampbanks<-na.exclude(banks)
+sampbanks
+head(banks)
+summary(banks)
+colnames(cars_data)
+plot(x=banks[,"age"], y=banks[,"income"])

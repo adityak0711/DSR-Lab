@@ -12,4 +12,5 @@ class(dat)
 row.names(dat)
 rownames(dat) <- c("Thistle","Vipers","Golden Rain","Yell","Green")
 dat
-row.names()
+row.names(dat)
+dat<-rbind(dat,c(1,2,3,4,5))

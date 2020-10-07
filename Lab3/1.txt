@@ -1,0 +1,8 @@
+getwd()
+software<-read.delim("Mar_Basket_Software.csv",sep=',')
+software
+summary(software)
+colnames(software)
+software<-cbind(software,price=c(100,200))
+colnames(software)
+write.csv(software,"data.csv",row.names=FALSE)

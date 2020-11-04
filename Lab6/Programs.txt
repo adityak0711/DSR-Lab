@@ -1,0 +1,12 @@
+//1st program
+
+library(ggplot2)
+dotchart(mtcars$mpg, labels = row.names(mtcars),cex = 0.6, xlab = "mpg")
+
+
+//2nd program
+
+library(gcookbook)
+str(cabbage_exp)
+ggplot(cabbage_exp, aes(x=Date, y=Weight, fill=Cultivar)) +geom_bar(stat="identity", position="dodge") +geom_text(aes(label=Weight), vjust=1.5, colour="white", position=position_dodge(.9), size=3)
+

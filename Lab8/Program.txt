@@ -11,3 +11,13 @@ var(machine2)
 sd(machine1)
 sd(machine2)
 t.test(x=machine1,y=machine2,var.equal = TRUE,conf.level=0.95)
+
+qt(p=0.05/2,df=18,lower.tail=TRUE)
+qt(p=0.05/2,df=18,lower.tail=FALSE)
+visualize.t(stat=c(-2.100922,2.100922),df=18,section="tails")
+
+visualize.t(stat=c(-0.47061,0.47061),df=18,section="tails")
+visualize.t(stat=c(-0.47061),df=18,section="upper")
+
+visualize.t(stat=c(-0.47061),df=18,section="lower")
+
